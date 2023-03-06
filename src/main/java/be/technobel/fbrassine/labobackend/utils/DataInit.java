@@ -73,12 +73,12 @@ public class DataInit implements InitializingBean {
         repository.save(teacher);
 
         User student = new User();
-        student.setEmail("brassine1987@gmail.com");
+        student.setEmail("student@student");
         student.setPassword(encoder.encode("Aa.0"));
-        student.setName("Brassine");
+        student.setName("student");
         student.setAdress("rue du curé 5 1234 outsimplou");
-        student.setFirstName("Félix");
-        student.setLogin("fbrassine");
+        student.setFirstName("student");
+        student.setLogin("sstudent");
         student.setPhoneNumber("0123456789");
         Set<UserRole> studentRoles = new HashSet<>();
         studentRoles.add(UserRole.STUDENT);

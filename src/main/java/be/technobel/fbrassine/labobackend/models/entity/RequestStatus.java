@@ -5,6 +5,7 @@ public enum RequestStatus {
     PENDING,
     ACCEPTED,
     REFUSED,
-    RELOCATING
+    RELOCATING,
+    PASSED
 
 }

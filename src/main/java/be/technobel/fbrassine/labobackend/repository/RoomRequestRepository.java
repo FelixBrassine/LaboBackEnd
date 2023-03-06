@@ -10,4 +10,6 @@ import java.util.List;
 
 public interface RoomRequestRepository extends JpaRepository<RoomRequest, Long> {
     List<RoomRequest> findByMadeBy(User user);
+    @Query("SELECT r FROM RoomRequest r WHERE r.date < NOW()")
+    List<RoomRequest> findDatePassed();
 }
